@@ -1,0 +1,15 @@
+.clearfloat:after{display:block; clear: both; content:"";visibility: hidden;height:0;}
+.clearfloat {zoom: 1;}
+.product:hover {
+  margin-top: -8px;
+  transition: all .5s ease;
+}
+ /* .item-list:hover {
+  border-top: 1px solid #E2E2E2;
+  border-bottom: 1px solid #E2E2E2;
+  border-left: 2px solid #22A059;
+  border-right: none;
+} */
+.f-l {float: left}
+.f-r{ float: right}
+.no-margin {margin-right: 0!important }

@@ -1,0 +1,12 @@
+@keyframes aslide {
+  0% {
+    margin-top: 5px;
+  }
+  100% {
+    margin-top: 10px;
+  }
+}
+.red {background: red; width: 100px; height: 100px;margin-top: 10px;}
+.red-leave {margin-top: 5px;}
+.red-leave-active { animation: aslide 1s; }
+.red-leave-to {margin-top: 10px;}
