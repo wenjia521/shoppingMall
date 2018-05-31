@@ -40,8 +40,7 @@
       </ul>
       <div class="pageCon">
          <div class="pageNav">
-          <el-pagination layout="prev, pager, next" :total="50">
-          </el-pagination>
+         <el-pagination background layout="prev, pager, next"  :total="100"></el-pagination>
       </div>
       </div>
     </div>

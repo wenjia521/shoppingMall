@@ -2,9 +2,11 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/page/home/'
 import Brand from '@/page/brand/'
-import Resolution from '@page/resolution'
-import Experience from '@page/experience'
-import SupplyChain from '@page/supplyChain'
+import Resolution from '@page/resolution/'
+import Experience from '@page/experience/'
+import SupplyChain from '@page/supplyChain/'
+import GoodsList from '@page/goodsList/'
+import Detail from '@page/detail/'
 Vue.use(Router)
 
 export default new Router({
@@ -33,6 +35,16 @@ export default new Router({
       path: '/supplyChain',
       name: 'supplyChain',
       component: SupplyChain
+    },
+    {
+      path: '/detail/:sightId',
+      name: 'detail',
+      component: Detail
+    },
+    {
+      path: '/goodsList/:ListId',
+      name: 'goodsList',
+      component: GoodsList
     }
   ]
 })

@@ -16,14 +16,14 @@
         </div>
         <div class="main-right-top clearfloat">
           <div class="rightTopItem">
-             <a href="">
+             <router-link to="/detail/">
                 <img  class="product" src="/static/img/stair.jpg" alt="">
                 <div class="name">东方鑫晟U型钢</div>
                 <div class="price">
                   ￥议价<span>/吨</span>
                 </div>
                 <div class="warning">会员价登录可见</div>
-            </a>
+            </router-link>
            </div>
            <div class="rightTopItem">
              <a href="">
@@ -46,7 +46,7 @@
             </a>
            </div>
            <div class="rightTopItem">
-             <a href="">
+             <a>
                 <img  class="product" src="/static/img/stair.jpg" alt="">
                 <div class="name">东方鑫晟U型钢</div>
                 <div class="price">

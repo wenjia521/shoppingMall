@@ -11,11 +11,10 @@ import 'element-ui/lib/theme-chalk/index.css'
 import './assets/style/iconfont/iconfont.css'
 import './assets/style/common/common.css'
 import 'swiper/dist/css/swiper.css'
-import animate from 'animate.css'
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(VueSwiper)
-Vue.use(animate)
+Vue.use(VueSwiper)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

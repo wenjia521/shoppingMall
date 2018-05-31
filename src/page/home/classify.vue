@@ -24,45 +24,6 @@
                   <a href="" class="item-router">金属矿<span class="iconfont">></span></a>
                 </div>
                 <div class="f-l item-txt">
-                  <a class="commodity-router f-l disabled">铜矿</a>
-                  <a class="commodity-router f-l disabled">锌矿</a>
-                  <a class="commodity-router f-l disabled">铁矿</a>
-                  <a class="commodity-router f-l disabled">铝矿</a>
-                </div>
-              </li>
-               <li class="right-list-item">
-                <div class="item-tile f-l">
-                  <a href="" class="item-router">金属矿<span class="iconfont">></span></a>
-                </div>
-                <div class="f-l item-txt">
-                  <a class="commodity-router f-l disabled">磨光/切割材料</a>
-                  <a class="commodity-router f-l disabled">焊材</a>
-                  <a class="commodity-router f-l disabled">气体</a>
-                  <a class="commodity-router f-l disabled">瓷环</a>
-                  <a class="commodity-router f-l disabled">焊材</a>
-                  <a class="commodity-router f-l disabled">其他</a>
-                  <a class="commodity-router f-l disabled">劳保防护</a>
-                </div>
-              </li>
-              <li class="right-list-item">
-                <div class="item-tile f-l">
-                  <a href="" class="item-router">金属矿<span class="iconfont">></span></a>
-                </div>
-                <div class="f-l item-txt">
-                  <a class="commodity-router f-l disabled">磨光/切割材料</a>
-                  <a class="commodity-router f-l disabled">焊材</a>
-                  <a class="commodity-router f-l disabled">气体</a>
-                  <a class="commodity-router f-l disabled">瓷环</a>
-                  <a class="commodity-router f-l disabled">焊材</a>
-                  <a class="commodity-router f-l disabled">其他</a>
-                  <a class="commodity-router f-l disabled">劳保防护</a>
-                </div>
-              </li>
-              <li class="right-list-item">
-                <div class="item-tile f-l">
-                  <a href="" class="item-router">金属矿<span class="iconfont">></span></a>
-                </div>
-                <div class="f-l item-txt">
                   <a class="commodity-router f-l disabled">磨光/切割材料</a>
                   <a class="commodity-router f-l disabled">焊材</a>
                   <a class="commodity-router f-l disabled">气体</a>
@@ -150,35 +111,6 @@
               <li class="right-list-item">
                 <div class="item-tile f-l">
                   <a href="" class="item-router">电梯设备设施><span class="iconfont">></span></a>
-                </div>
-                <div class="f-l item-txt">
-                  <a class="commodity-router f-l disabled">磨光/切割材料</a>
-                  <a class="commodity-router f-l disabled">焊材</a>
-                  <a class="commodity-router f-l disabled">气体</a>
-                  <a class="commodity-router f-l disabled">瓷环</a>
-                  <a class="commodity-router f-l disabled">焊材</a>
-                  <a class="commodity-router f-l disabled">其他</a>
-                  <a class="commodity-router f-l disabled">劳保防护</a>
-                </div>
-              </li>
-
-              <li class="right-list-item">
-                <div class="item-tile f-l">
-                  <a href="" class="item-router">电梯设备设施><span class="iconfont">></span></a>
-                </div>
-                <div class="f-l item-txt">
-                  <a class="commodity-router f-l disabled">磨光/切割材料</a>
-                  <a class="commodity-router f-l disabled">焊材</a>
-                  <a class="commodity-router f-l disabled">气体</a>
-                  <a class="commodity-router f-l disabled">瓷环</a>
-                  <a class="commodity-router f-l disabled">焊材</a>
-                  <a class="commodity-router f-l disabled">其他</a>
-                  <a class="commodity-router f-l disabled">劳保防护</a>
-                </div>
-              </li>
-              <li class="right-list-item">
-                <div class="item-tile f-l">
-                  <a href="" class="item-router">电梯设备设施<span class="iconfont">></span></a>
                 </div>
                 <div class="f-l item-txt">
                   <a class="commodity-router f-l disabled">磨光/切割材料</a>
