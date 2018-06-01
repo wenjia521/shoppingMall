@@ -1,0 +1,190 @@
+{
+  "ret": "true",
+  "data": {
+    "topBrand": "/static/img/",
+    "banner": [{
+      "id": "0001",
+      "imgUrl": "/static/img/banner.jpg"
+    },
+    {
+      "id": "0002",
+      "imgUrl": "/static/img/banner2.jpg"
+    },
+    {
+      "id": "0003",
+      "imgUrl": "/static/img/banner3.jpg"
+    }],
+    "sliders": [{
+      "id": "1001",
+      "imgUrl": "/static/img/sm-banner.jpg"
+    },{
+      "id": "1002",
+      "imgUrl": "/static/img/sm-banner2.jpg"
+    },{
+      "id": "1003",
+      "imgUrl": "/static/img/sm-banner3.jpg"
+    }],
+    "news": [{
+      "id": "2001",
+      "index": "0",
+      "title": "万郡绿建与庆东纳碧安热设备能达成供方战略合作！",
+      "time": "2018-04-14 10:08:38"
+    },
+    { "id": "2002",
+      "index": "1",
+      "title": "万郡绿建与中青杭萧达成需方战略合作！",
+      "time": "2018-04-12 16:11:38"
+    },
+    {
+      "id": "2003",
+      "index": "2",
+      "title": "万郡绿建与大桥焊材达成供方战略合作！ ",
+      "time": "2018-02-12 16:11:38"
+    },
+    {
+      "id": "2004",
+      "index": "3",
+      "title": "万郡绿建与亚地斯涂料达成供方战略合作！ ",
+      "time": "2018-03-09 16:11:38"
+    }],
+    "stairs": [
+     {"id": "3001",
+       "imgUrl": "/static/img/stair.jpg",
+      "title": "东方鑫晟U型钢",
+      "price": "￥议价",
+      "unit": "吨",
+      "warning": "会员价登录可见"},
+      {"id": "3002",
+        "imgUrl": "/static/img/stair2.jpg",
+       "title": "元立埋弧焊丝H08MnA 4.0mm（25kg）",
+       "price": "￥6,000.00 ",
+       "unit": "吨",
+       "warning": "会员价登录可见"},
+       {"id": "3003",
+        "imgUrl": "/static/img/stair3.jpg",
+       "title": "大桥气保焊丝ER50-6 1.6mm",
+       "price": "￥6,900.00 ",
+       "unit": "吨",
+       "warning": "会员价登录可见"},
+       {"id": "3004",
+        "imgUrl": "/static/img/stair4.jpg",
+       "title": "东方鑫晟U型钢",
+       "price": "￥议价",
+       "unit": "吨",
+       "warning": "会员价登录可见"},
+       {"id": "3005",
+         "imgUrl": "/static/img/stair5.jpg",
+        "title": "元立埋弧焊丝H08MnA 4.0mm（25kg）",
+        "price": "￥6,000.00 ",
+        "unit": "吨",
+        "warning": "会员价登录可见"},
+        {"id": "3006",
+         "imgUrl": "/static/img/stair6.jpg",
+        "title": "大桥气保焊丝ER50-6 1.6mm",
+        "price": "￥6,900.00 ",
+        "unit": "吨",
+        "warning": "会员价登录可见"},
+        {"id": "3007",
+          "imgUrl": "/static/img/stair7.jpg",
+         "title": "东方鑫晟U型钢",
+         "price": "￥议价",
+         "unit": "吨",
+         "warning": "会员价登录可见"},
+         {"id": "3008",
+           "imgUrl": "/static/img/stair8.jpg",
+          "title": "元立埋弧焊丝H08MnA 4.0mm（25kg）",
+          "price": "￥6,000.00 ",
+          "unit": "吨",
+          "warning": "会员价登录可见"},
+          {"id": "3009",
+           "imgUrl": "/static/img/stair9.jpg",
+          "title": "大桥气保焊丝ER50-6 1.6mm",
+          "price": "￥6,900.00 ",
+          "unit": "吨",
+          "warning": "会员价登录可见"},
+          {"id": "3010",
+            "imgUrl": "/static/img/stair10.jpg",
+           "title": "大桥气保焊丝ER50-6 1.6mm",
+           "price": "￥6,900.00 ",
+           "unit": "吨",
+           "warning": "会员价登录可见"}
+        ],
+        "stairBrands": [
+          {"id": "4001",
+            "itemIndex":"1",
+            "imgUrl": "/static/img/stairBrand.jpg"
+          },
+          {"id": "4002",
+            "itemIndex":"2",
+            "imgUrl": "/static/img/stairBrand2.jpg"
+          },
+          {"id": "4003",
+            "itemIndex":"3",
+            "imgUrl": "/static/img/stairBrand3.jpg"
+          },
+          {"id": "4004",
+            "itemIndex":"4",
+            "imgUrl": "/static/img/stairBrand4.jpg"
+          },
+          {"id": "4005",
+            "itemIndex":"5",
+            "imgUrl": "/static/img/stairBrand5.jpg"
+          }
+        ],
+        "stairLeft": "/static/img/stair-left.jpg",
+        "classify":[
+          {
+            "id": "5001",
+            "title": [{
+              "main-title": "装配式建筑",
+              "item-id": "01",
+              "main-item":[{
+                "item1": "栓钉",
+                "item2": "螺栓/螺母及垫片",
+                "item3": "气保焊枪/配件",
+                "item4": "焊材",
+                "item5": "栓钉",
+                "item6": "热卷",
+                "item7": "彩涂"
+              }]
+            }],
+            "classify-total": [{
+              "classify-title1": "金属矿",
+              "classify-icon": [{
+                "icon1": "铜矿",
+                "icon2": "锌矿",
+                "icon3": "铁矿",
+                "icon4": "铝矿"
+              },
+              {
+                "classify-title2": "结构材料",
+                "classify-icon": [{
+                  "icon1": "冷轧/镀锌",
+                  "icon2": "钢管",
+                  "icon3": "中厚板",
+                  "icon4": "型钢",
+                  "icon5": "热卷",
+                  "icon6": "波纹腹板",
+                  "icon7": "冷拔带肋钢筋",
+                  "icon8": "彩涂",
+                  "icon9": "高频焊接型钢",
+                  "icon10": "不锈钢"
+                },
+                {
+                  "classify-title3": "生产辅材/耗材及防护",
+                  "classify-icon": [{
+                    "icon1": "磨光/切割材料",
+                    "icon2": "镀铜碳棒",
+                    "icon3": "钢丸钢砂",
+                    "icon4": "钻头",
+                    "icon5": "气体",
+                    "icon6": "瓷环",
+                    "icon7": "其他",
+                    "icon8": "劳保防护"
+                  }]
+              }]
+          }]
+      }]
+  }]
+  }
+ }

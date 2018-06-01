@@ -5,30 +5,15 @@
       <div class="swiper-con">
         <div class="swiper-top">
           <el-carousel>
-             <el-carousel-item>
-              <img src="/static/img/banner.jpg" alt="">
-            </el-carousel-item>
-            <el-carousel-item>
-              <img src="/static/img/banner2.jpg" alt="">
-            </el-carousel-item>
-             <el-carousel-item>
-              <img src="/static/img/banner3.jpg" alt="">
-            </el-carousel-item>
+              <el-carousel-item v-for="item in banner" :key="item.id">
+                <img :src="item.imgUrl" alt="">
+              </el-carousel-item>
           </el-carousel>
         </div>
         <div class="swiper-bottom">
            <el-carousel  type="card" height="120px" :autoplay="false" >
-              <el-carousel-item>
-                <img src="static/img/sm-banner.jpg" alt="">
-              </el-carousel-item>
-             <el-carousel-item>
-                <img src="static/img/sm-banner2.jpg" alt="">
-              </el-carousel-item>
-             <el-carousel-item>
-                <img src="static/img/sm-banner3.jpg" alt="">
-              </el-carousel-item>
-              <el-carousel-item>
-                <img src="static/img/sm-banner4.jpg" alt="">
+              <el-carousel-item v-for="item in sliders" :key="item.id">
+                <img :src="item.imgUrl" alt="">
               </el-carousel-item>
           </el-carousel>
         </div>
@@ -39,20 +24,17 @@
             <span class="gg">网站公告</span>
           </div>
           <div class="news-list  clearfloat">
-            <div class="single-content">
+            <div class="single-content"
+                  v-for="(item, index) in news" :key ="item.id">
               <a href="">
-                <!-- <div class="point"></div> -->
                 <span class="iconfont icon">&#xe608;</span>
-                <div class="name">万郡绿建与庆东纳碧安热设备能达成供方战略合作！</div>
-                <div class="date">2018-04-14 10:08:38</div>
-              </a>
-            </div>
-            <div class="single-content">
-              <a href="">
-                <!-- <div class="point"></div> -->
-                <span class="iconfont icon">&#xe608;</span>
-                <div class="name">万郡绿建与庆东纳碧安热设备能达成供方战略合作！</div>
-                <div class="date">2018-04-14 10:08:38</div>
+                <div class="name"
+                :class="{itemHover: itemHoverIndex == item.index}"
+                v-on:mouseenter="mouseEnter(index)"
+                v-on:mouseleave="mouseLeave">
+                {{item.title}}
+                </div>
+                <div class="date">{{item.time}}</div>
               </a>
             </div>
           </div>
@@ -68,8 +50,14 @@ export default {
   components: {
     Classify
   },
+  props: {
+    banner: Array,
+    sliders: Array,
+    news: Array
+  },
   data () {
     return {
+      itemHoverIndex: null,
       swiperOption: {
         slidesPerView: 5,
         spaceBetween: 30,
@@ -82,6 +70,14 @@ export default {
           prevEl: '.swiper-button-prev'
         }
       }
+    }
+  },
+  methods: {
+    mouseEnter: function (index) {
+      this.itemHoverIndex = index
+    },
+    mouseLeave: function () {
+      this.itemHoverIndex = null
     }
   }
 }
@@ -138,6 +134,8 @@ export default {
             text-overflow: ellipsis
             overflow: hidden
             padding-left: 8px
+          .itemHover
+             color: #2caf64
           .date
             margin-left: 22px
             line-height: 18px

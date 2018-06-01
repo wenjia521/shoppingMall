@@ -1,61 +1,11 @@
 <template>
-  <div class="classify-content">
+ <div class="classify-content">
     <ul class="classify-con">
-      <li class="item-list" v-on:mouseenter="add" v-on:mouseleave="remove">
-        <div class="classify-shop-content">
-          <b class="iconfont shop-left-icon">&#xe642;</b>
-          <p class="classify-shop-title">
-            装配式建筑
-            <i class="iconfont shop-title-right-icon">&#xe6bf;</i>
-          </p>
-          <div class="clearfloat classifty-main-item">
-            <span class="classify-shop-txt">栓钉</span>
-            <span class="classify-shop-txt">螺栓/螺母及垫片</span>
-            <span class="classify-shop-txt">气保焊枪/配件</span>
-            <span class="classify-shop-txt">焊材</span>
-            <span class="classify-shop-txt">热卷</span>
-            <span class="classify-shop-txt">彩涂</span>
-          </div>
-        </div>
-        <ul class="classify-content-list" v-show="show">
-           <div class="classify-content-list-in">
-              <li class="right-list-item">
-                <div class="item-tile f-l">
-                  <a href="" class="item-router">金属矿<span class="iconfont">></span></a>
-                </div>
-                <div class="f-l item-txt">
-                  <a class="commodity-router f-l disabled">磨光/切割材料</a>
-                  <a class="commodity-router f-l disabled">焊材</a>
-                  <a class="commodity-router f-l disabled">气体</a>
-                  <a class="commodity-router f-l disabled">瓷环</a>
-                  <a class="commodity-router f-l disabled">焊材</a>
-                  <a class="commodity-router f-l disabled">其他</a>
-                  <a class="commodity-router f-l disabled">劳保防护</a>
-                </div>
-              </li>
-
-              <li class="right-list-item">
-                <div class="item-tile f-l">
-                  <a href="" class="item-router">金属矿<span class="iconfont">></span></a>
-                </div>
-                <div class="f-l item-txt">
-                  <a class="commodity-router f-l disabled">磨光/切割材料</a>
-                  <a class="commodity-router f-l disabled">焊材</a>
-                  <a class="commodity-router f-l disabled">气体</a>
-                  <a class="commodity-router f-l disabled">瓷环</a>
-                  <a class="commodity-router f-l disabled">焊材</a>
-                  <a class="commodity-router f-l disabled">其他</a>
-                  <a class="commodity-router f-l disabled">劳保防护</a>
-                </div>
-              </li>
-           </div>
-        </ul>
-      </li>
-      <li class="item-list" v-on:mouseenter="add" v-on:mouseleave="remove">
+      <li class="item-list" v-for="item in classify" v-bind:key="item.id">
         <div class="classify-shop-content">
           <b class="iconfont shop-left-icon">&#xe64f;</b>
           <p class="classify-shop-title">
-            建筑工程
+            {{item.id}}
             <i class="iconfont shop-title-right-icon">&#xe6bf;</i>
           </p>
           <div class="clearfloat classifty-main-item">
@@ -131,9 +81,12 @@
 <script>
 export default {
   name: 'classify',
+  props: {
+    classify: Array
+  },
   data: function () {
     return {
-      show: false
+      show: true
     }
   },
   methods: {
@@ -150,12 +103,14 @@ export default {
 .classify-content
   min-height: 470px
   width: 220px
+  margin: 0 auto
   .classify-con
     width: 100%
     height: 100%
     background: #fff
     position: relative
     .item-list
+      box-sizing: border-box
       position: relative
       height: 105px
       padding: 15px 0 15px 37px
@@ -164,11 +119,13 @@ export default {
       border-left: 1px solid #E2E2E2
       border-right: 1px solid #E2E2E2
       &:hover
-        transition: all .5s
+        transition: all .7s
         border-top: 1px solid #E2E2E2
         border-bottom: 1px solid #E2E2E2
-        border-left: 3px solid #22A059
-        border-right: 0 none
+        border-left: 2px solid #22A059
+        border-right: 1px solid #fff
+      &:hover .classify-content-list
+        left: 218px
       .classify-shop-content
         position: relative
         width: 100%
@@ -206,14 +163,15 @@ export default {
     .classify-content-list
       width: 940px
       height: 470px
-      padding-right: 40px
       background: #fff
+      padding-right: 40px
       position: absolute
       top: 0
-      left: 218px
+      left: 219px
       z-index: 99
       overflow: hidden
       .classify-content-list-in
+        overflow-y: auto
         padding: 0 170px 25px 27px
         .right-list-item
           padding: 15px 0 0 0

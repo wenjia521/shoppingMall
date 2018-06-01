@@ -4,7 +4,7 @@
       <div class="title">1F 装配式建筑</div>
       <div class="stairs-main">
         <div class="main-left clearfloat">
-          <img class="main-img" src="/static/img/stair-left.jpg" alt="">
+          <img class="main-img" :src="stairLeft" alt="">
           <div class="intro clearfix">
             <div class="data"><a class="data-con" href="" target="_blank">螺栓/螺母及垫片</a></div>
             <div class="data"><a class="data-con" href="" target="_blank">栓钉</a></div>
@@ -15,146 +15,20 @@
           </div>
         </div>
         <div class="main-right-top clearfloat">
-          <div class="rightTopItem">
+          <div class="rightTopItem" v-for="item in stairs" :key="item.id">
              <router-link to="/detail/">
-                <img  class="product" src="/static/img/stair.jpg" alt="">
-                <div class="name">东方鑫晟U型钢</div>
+                <img  class="product" :src="item.imgUrl" alt="">
+                <div class="name">{{item.title}}</div>
                 <div class="price">
-                  ￥议价<span>/吨</span>
+                  {{item.price}}<span>/{{item.unit}}</span>
                 </div>
-                <div class="warning">会员价登录可见</div>
+                <div class="warning">{{item.warning}}</div>
             </router-link>
            </div>
-           <div class="rightTopItem">
-             <a href="">
-                <img  class="product" src="/static/img/stair.jpg" alt="">
-                <div class="name">东方鑫晟U型钢</div>
-                <div class="price">
-                  ￥议价<span>/吨</span>
-                </div>
-                <div class="warning">会员价登录可见</div>
-            </a>
-           </div>
-           <div class="rightTopItem">
-             <a href="">
-                <img  class="product" src="/static/img/stair.jpg" alt="">
-                <div class="name">东方鑫晟U型钢</div>
-                <div class="price">
-                  ￥议价<span>/吨</span>
-                </div>
-                <div class="warning">会员价登录可见</div>
-            </a>
-           </div>
-           <div class="rightTopItem">
-             <a>
-                <img  class="product" src="/static/img/stair.jpg" alt="">
-                <div class="name">东方鑫晟U型钢</div>
-                <div class="price">
-                  ￥议价<span>/吨</span>
-                </div>
-                <div class="warning">会员价登录可见</div>
-            </a>
-           </div>
-           <div class="rightTopItem">
-             <a href="">
-                <img  class="product" src="/static/img/stair.jpg" alt="">
-                <div class="name">东方鑫晟U型钢</div>
-                <div class="price">
-                  ￥议价<span>/吨</span>
-                </div>
-                <div class="warning">会员价登录可见</div>
-            </a>
-           </div>
-           <div class="rightTopItem">
-             <a href="">
-                <img  class="product" src="/static/img/stair.jpg" alt="">
-                <div class="name">东方鑫晟U型钢</div>
-                <div class="price">
-                  ￥议价<span>/吨</span>
-                </div>
-                <div class="warning">会员价登录可见</div>
-            </a>
-           </div>
-           <div class="rightTopItem">
-             <a href="">
-                <img  class="product" src="/static/img/stair.jpg" alt="">
-                <div class="name">东方鑫晟U型钢</div>
-                <div class="price">
-                  ￥议价<span>/吨</span>
-                </div>
-                <div class="warning">会员价登录可见</div>
-            </a>
-           </div>
-           <div class="rightTopItem">
-             <a href="">
-                <img  class="product" src="/static/img/stair.jpg" alt="">
-                <div class="name">东方鑫晟U型钢</div>
-                <div class="price">
-                  ￥议价<span>/吨</span>
-                </div>
-                <div class="warning">会员价登录可见</div>
-            </a>
-           </div>
-           <div class="rightTopItem">
-             <a href="">
-                <img  class="product" src="/static/img/stair.jpg" alt="">
-                <div class="name">东方鑫晟U型钢</div>
-                <div class="price">
-                  ￥议价<span>/吨</span>
-                </div>
-                <div class="warning">会员价登录可见</div>
-            </a>
-           </div>
-           <div class="rightTopItem">
-             <a href="">
-                <img  class="product" src="/static/img/stair.jpg" alt="">
-                <div class="name">东方鑫晟U型钢</div>
-                <div class="price">
-                  ￥议价<span>/吨</span>
-                </div>
-                <div class="warning">会员价登录可见</div>
-            </a>
-           </div>
-           <div class="rightTopItem">
-             <a href="">
-                <img  class="product" src="/static/img/stair.jpg" alt="">
-                <div class="name">东方鑫晟U型钢</div>
-                <div class="price">
-                  ￥议价<span>/吨</span>
-                </div>
-                <div class="warning">会员价登录可见</div>
-            </a>
-           </div>
-           <div class="rightTopItem">
-             <a href="">
-                <img  class="product" src="/static/img/stair.jpg" alt="">
-                <div class="name">东方鑫晟U型钢</div>
-                <div class="price">
-                  ￥议价<span>/吨</span>
-                </div>
-                <div class="warning">会员价登录可见</div>
-            </a>
-           </div>
         </div>
-        <div class="main-right-bottom">
-          <a href="">
-            <img  class="bot-img" src="/static/img/stair-bottom.jpg" alt="">
-            <div class="border-r"></div>
-          </a>
-           <a href="">
-            <img  class="bot-img" src="/static/img/stair-bottom.jpg" alt="">
-            <div class="border-r"></div>
-          </a>
-           <a href="">
-            <img  class="bot-img" src="/static/img/stair-bottom.jpg" alt="">
-            <div class="border-r"></div>
-          </a>
-           <a href="">
-            <img  class="bot-img" src="/static/img/stair-bottom.jpg" alt="">
-            <div class="border-r"></div>
-          </a>
-           <a href="">
-            <img  class="bot-img" src="/static/img/stair-bottom.jpg" alt="">
+        <div class="main-right-bottom" >
+          <a href="" v-for ="(item, index) in stairBrands" v-bind:key="index">
+            <img  class="bot-img" :src="item.imgUrl" alt="">
             <div class="border-r"></div>
           </a>
         </div>
@@ -166,15 +40,10 @@
 <script>
 export default {
   name: 'Stairs',
-  data () {
-    return {
-      show: true
-    }
-  },
-  methods: {
-    change: function () {
-      this.show = this.show
-    }
+  props: {
+    stairs: Array,
+    stairBrands: Array,
+    stairLeft: String
   }
 }
 </script>
@@ -236,12 +105,15 @@ export default {
         .name
           position: absolute
           bottom: 44px
+          width: 165px
           color: #666
           margin-top: 15px
           text-align: left
           overflow: hidden
           text-overflow: ellipsis
           white-space: nowrap
+        .active
+          color: red
         .price
           position: absolute
           bottom: 22px
