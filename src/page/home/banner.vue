@@ -21,7 +21,7 @@
       <div class="news">
         <div class="news-content clearfloat">
           <div class="news-title">
-            <span class="gg">网站公告</span>
+            <span class="gg">网站公告{{demo}}</span>
           </div>
           <div class="news-list  clearfloat">
             <div class="single-content"
@@ -53,7 +53,14 @@ export default {
   props: {
     banner: Array,
     sliders: Array,
-    news: Array
+    news: Array,
+    classifyList: Array,
+    demo: String
+  },
+  watch: {
+    get: function () {
+      console.log(this.banner)
+    }
   },
   data () {
     return {

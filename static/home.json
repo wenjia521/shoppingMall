@@ -132,6 +132,7 @@
           }
         ],
         "stairLeft": "/static/img/stair-left.jpg",
+        "demo": "hello world",
         "classify":[
           {
             "id": "5001",

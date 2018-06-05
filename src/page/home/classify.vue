@@ -1,11 +1,11 @@
 <template>
- <div class="classify-content">
+  <div class="classify-content">
     <ul class="classify-con">
-      <li class="item-list" v-for="item in classify" v-bind:key="item.id">
+      <li class="item-list" v-on:mouseenter="add" v-on:mouseleave="remove">
         <div class="classify-shop-content">
           <b class="iconfont shop-left-icon">&#xe64f;</b>
           <p class="classify-shop-title">
-            {{item.id}}
+              建筑
             <i class="iconfont shop-title-right-icon">&#xe6bf;</i>
           </p>
           <div class="clearfloat classifty-main-item">
@@ -82,11 +82,12 @@
 export default {
   name: 'classify',
   props: {
-    classify: Array
+    classsifyListSecond: Array,
+    demoSecond: String
   },
   data: function () {
     return {
-      show: true
+      show: false
     }
   },
   methods: {
@@ -103,14 +104,12 @@ export default {
 .classify-content
   min-height: 470px
   width: 220px
-  margin: 0 auto
   .classify-con
     width: 100%
     height: 100%
     background: #fff
     position: relative
     .item-list
-      box-sizing: border-box
       position: relative
       height: 105px
       padding: 15px 0 15px 37px
@@ -119,13 +118,11 @@ export default {
       border-left: 1px solid #E2E2E2
       border-right: 1px solid #E2E2E2
       &:hover
-        transition: all .7s
+        transition: all .5s
         border-top: 1px solid #E2E2E2
         border-bottom: 1px solid #E2E2E2
-        border-left: 2px solid #22A059
-        border-right: 1px solid #fff
-      &:hover .classify-content-list
-        left: 218px
+        border-left: 3px solid #22A059
+        border-right: 0 none
       .classify-shop-content
         position: relative
         width: 100%
@@ -163,15 +160,14 @@ export default {
     .classify-content-list
       width: 940px
       height: 470px
-      background: #fff
       padding-right: 40px
+      background: #fff
       position: absolute
       top: 0
-      left: 219px
+      left: 218px
       z-index: 99
       overflow: hidden
       .classify-content-list-in
-        overflow-y: auto
         padding: 0 170px 25px 27px
         .right-list-item
           padding: 15px 0 0 0

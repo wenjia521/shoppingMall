@@ -4,10 +4,9 @@
       <home-ad></home-ad>
       <home-search></home-search>
       <list-header></list-header>
-       <classify></classify>
-      <banner class="banner-con" :sliders="sliders" :banner="banner" :news="news">
+      <banner class="banner-con" :sliders="sliders" :banner="banner" :news="news" 
+              :classifyList="classify" :demo="demo">
       </banner>
-     
       <div class="adtwo"></div>
       <stairs :stairs="stairs" :stairBrands = "stairBrands" :stairLeft="stairLeft"></stairs>
       <advert-bot></advert-bot>
@@ -24,7 +23,6 @@ import HomeSearch from '@page/common/search'
 import ListHeader from '@page/common/list-header'
 import Banner from './banner'
 import Stairs from './stairs'
-import Classify from './classify'
 import Information from './inform'
 import Supply from './supply'
 import advertBot from '@page/common/advertBot'
@@ -38,7 +36,9 @@ export default {
       news: [],
       stairs: [],
       stairBrands: [],
-      stairLeft: ''
+      stairLeft: '',
+      classify: [],
+      demo: ''
     }
   },
   components: {
@@ -51,8 +51,7 @@ export default {
     advertBot,
     Information,
     Supply,
-    YqLink,
-    Classify
+    YqLink
   },
   methods: {
     getDataHome () {
@@ -70,6 +69,7 @@ export default {
         res.data.stairBrands && (this.stairBrands = res.data.stairBrands)
         res.data.stairLeft && (this.stairLeft = res.data.stairLeft)
         res.data.classify && (this.classify = res.data.classify)
+        res.data.demo && (this.demo = res.data.demo)
       }
     },
     handleDataError () {
