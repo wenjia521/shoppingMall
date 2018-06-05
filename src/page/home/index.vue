@@ -4,8 +4,8 @@
       <home-ad></home-ad>
       <home-search></home-search>
       <list-header></list-header>
-      <banner class="banner-con" :sliders="sliders" :banner="banner" :news="news" 
-              :classifyList="classify" :demo="demo">
+      <banner class="banner-con" :sliders="sliders" :banner="banner" :news="news"
+       :classifyList="classify" :demo="demo">
       </banner>
       <div class="adtwo"></div>
       <stairs :stairs="stairs" :stairBrands = "stairBrands" :stairLeft="stairLeft"></stairs>
